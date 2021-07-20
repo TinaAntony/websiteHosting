@@ -9,7 +9,7 @@ trigger:
 variables:
 - task: CopyFiles@2
   inputs:
-    Contents: '**.war'
+    Contents: '**/*.war'
     TargetFolder: '$(build.artifactstagingdirectory)'
   # Azure Resource Manager connection created during pipeline creation
   azureSubscription: '3a2797ef-77a7-4712-b53b-a00d8c97c0cc'
